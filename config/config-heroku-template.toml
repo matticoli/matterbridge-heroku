@@ -17,4 +17,4 @@ RemoteNickFormat="[{PROTOCOL}/{BRIDGE}] <{NICK}> "
 
     [[gateway.inout]]
     account ="slack.myslack"
-    channel = "discord-bots"
+    channel = "discord"
