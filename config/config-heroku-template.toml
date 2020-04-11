@@ -1,8 +1,6 @@
-[slack]
 [slack.myslack]
 PrefixMessagesWithNick=true
 
-[discord]
 [discord.mydiscord]
 Server="yourdiscordservername"
 
