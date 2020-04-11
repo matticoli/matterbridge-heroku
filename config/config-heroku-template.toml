@@ -1,23 +1,22 @@
-[discord.mydiscord]
-
-# You can get your token by following the instructions on
-# https://github.com/42wim/matterbridge/wiki/Discord-bot-setup
-# If you want roles/groups mentions to be shown with names instead of ID, 
-# you'll need to give your bot the "Manage Roles" permission.
-Server="Test Server" # picked from guilds the bot is connected to
-RemoteNickFormat="[{PROTOCOL}] <{NICK}> "
-
-
 [slack]
 [slack.myslack]
-RemoteNickFormat="{BRIDGE} - @{NICK}"
+PrefixMessagesWithNick=true
+
+[discord]
+[discord.mydiscord]
+Server="yourdiscordservername"
+
+[general]
+RemoteNickFormat="[{PROTOCOL}/{BRIDGE}] <{NICK}> "
 
 [[gateway]]
-name="vexibot"
-enable=true
-[[gateway.inout]]
-account="slack.myslack"
-channel="discord-bots"
-[[gateway.inout]]
-account="discord.myserver"
-channel="general"
+    name = "mygateway"
+    enable=true
+
+    [[gateway.inout]]
+    account = "discord.mydiscord"
+    channel="general"
+
+    [[gateway.inout]]
+    account ="slack.myslack"
+    channel = "discord-bots"
