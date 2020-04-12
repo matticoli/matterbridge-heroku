@@ -2,7 +2,7 @@
 PrefixMessagesWithNick=true
 
 [discord.mydiscord]
-Server="yourdiscordservername"
+Server="698613972928299079"
 
 [general]
 RemoteNickFormat="[{PROTOCOL}/{BRIDGE}] <{NICK}> "
