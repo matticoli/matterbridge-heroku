@@ -22,12 +22,12 @@ buildpack that _runs_ the app.
 simple _bridge_ that can relay messages between a number of different
 chat services, essentially connecting separate chat tools.
 
-This fork is intended to help bridge channels between both the EDGI and
-Archivers Slack teams.
+This fork is intended to help bridge channels between the WPI VEX U Slack and Discord for vexibot integration
 
 * Required envvars:
   * `MATTERBRIDGE_VERSION`. Use a [matterbridge git tag][git-tags].
   * `SLACK_<team name>_TOKEN`. See [_Slack bot setup_ documentation][bot-setup].
+  * `DISCORD_<server id>_TOKEN`.
 * Optional envvars:
   * `MATTERBRIDGE_URL`. Use this to download the binary from a custom
     url instead of the tagged release from the official GitHub repo.
@@ -36,9 +36,7 @@ Archivers Slack teams.
       build](https://bintray.com/42wim/nightly/Matterbridge/_latestVersion)
       while waiting on the next official release.
   * `DEBUG`. Set to "1" to log all message events across bridges.
-* Auto-deploys `master` branch to our heroku app: `edgi-matterbridge`
-* `master` branch is protected branch, and changes must go through pull
-  request process.
+* Auto-deploys `master` branch to our heroku app: `matterbridge-vexu`
 * Edit channel bridge config via [`config/config-heroku-template.toml`][config].
 
    [bot-setup]: https://github.com/42wim/matterbridge/wiki/Slack-bot-setup
