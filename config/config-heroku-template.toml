@@ -3,6 +3,7 @@ PrefixMessagesWithNick=false
 
 [discord.mydiscord]
 Server="698613972928299079"
+ShowEmbeds=true
 
 [general]
 RemoteNickFormat=""
