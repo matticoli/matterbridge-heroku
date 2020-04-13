@@ -1,11 +1,11 @@
 [slack.myslack]
-PrefixMessagesWithNick=true
+PrefixMessagesWithNick=false
 
 [discord.mydiscord]
 Server="698613972928299079"
 
 [general]
-RemoteNickFormat="[{PROTOCOL}/{BRIDGE}] <{NICK}> "
+RemoteNickFormat=""
 
 [[gateway]]
     name = "mygateway"
