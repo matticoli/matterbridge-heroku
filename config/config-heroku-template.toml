@@ -5,6 +5,11 @@ PrefixMessagesWithNick=false
 Server="698613972928299079"
 ShowEmbeds=true
 
+[gitter.mygitter]
+RemoteNickFormat="[{PROTOCOL}] <{NICK}> "
+#This improves the situation where a gitter user uploads a picture/file, just relay the link instead of the Markdown
+ReplaceMessages=[["^\\[!\\[[^\\]]+\\]\\(https?:\\/\\/files\\.gitter\\.im\\/[^\\/]+\\/[^\\/]+\\/[^\\/]+\\/thumb\\/[^\\)]+\\)\\]\\(([^\\)]+)\\)$", "$1"], ["\\[[^\\]]+\\]\\((https:\\/\\/files\\.gitter\\.im\\/[^\\/]+\\/[^\\/]+\\/[^\\/]+\\/[^\\)]+)\\)$", "$1"]]
+
 [general]
 RemoteNickFormat=""
 
@@ -13,9 +18,9 @@ RemoteNickFormat=""
     enable=true
 
     [[gateway.inout]]
-    account = "discord.mydiscord"
-    channel="general"
+    account = "gitter.mygitter"
+    channel="wpivex/ot-slacktesting"
 
     [[gateway.inout]]
     account ="slack.myslack"
-    channel = "discord"
+    channel = "ot-slacktesting"
