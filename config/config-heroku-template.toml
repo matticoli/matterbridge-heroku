@@ -1,12 +1,12 @@
 [slack.myslack]
-PrefixMessagesWithNick=false
+PrefixMessagesWithNick=true
 
 [discord.mydiscord]
 Server="698613972928299079"
 ShowEmbeds=true
 
 [gitter.mygitter]
-RemoteNickFormat="[{PROTOCOL}] <{NICK}> "
+RemoteNickFormat="<{NICK}> "
 #This improves the situation where a gitter user uploads a picture/file, just relay the link instead of the Markdown
 ReplaceMessages=[["^\\[!\\[[^\\]]+\\]\\(https?:\\/\\/files\\.gitter\\.im\\/[^\\/]+\\/[^\\/]+\\/[^\\/]+\\/thumb\\/[^\\)]+\\)\\]\\(([^\\)]+)\\)$", "$1"], ["\\[[^\\]]+\\]\\((https:\\/\\/files\\.gitter\\.im\\/[^\\/]+\\/[^\\/]+\\/[^\\/]+\\/[^\\)]+)\\)$", "$1"]]
 
