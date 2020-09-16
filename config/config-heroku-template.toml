@@ -1,5 +1,6 @@
 [slack.myslack]
 PrefixMessagesWithNick=true
+RemoteNickFormat="@{NICK}"
 
 [discord.mydiscord]
 Server="698613972928299079"
